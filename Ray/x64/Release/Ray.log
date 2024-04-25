@@ -1,0 +1,31 @@
+﻿  main.cpp
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(20,61): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(19,62): warning C4244: 'argument': conversion from 'T' to 'sf::Uint8', possible loss of data
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(19,62): warning C4244:         with
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(19,62): warning C4244:         [
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(19,62): warning C4244:             T=float
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(19,62): warning C4244:         ]
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(18,70): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nicol\Documents\Code\C++\Ray\main.cpp(11,56): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicol\Documents\Code\C++\Ray\main.cpp(11,43): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicol\Documents\Code\C++\Ray\main.cpp(13,54): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+  shader.cpp
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(20,61): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(19,62): warning C4244: 'argument': conversion from 'T' to 'sf::Uint8', possible loss of data
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(19,62): warning C4244:         with
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(19,62): warning C4244:         [
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(19,62): warning C4244:             T=float
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(19,62): warning C4244:         ]
+C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp(18,70): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
+  Generating code
+  2 of 41 functions ( 4.9%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Ray.vcxproj -> C:\Users\Nicol\Documents\Code\C++\Ray\x64\Release\Ray.exe
