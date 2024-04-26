@@ -1,2 +1,7 @@
-C:\Users\Nicol\Documents\Code\C++\Ray\main.cpp;C:\Users\Nicol\Documents\Code\C++\Ray\Ray\x64\Release\main.obj
-C:\Users\Nicol\Documents\Code\C++\Ray\shader.cpp;C:\Users\Nicol\Documents\Code\C++\Ray\Ray\x64\Release\shader.obj
+C:\Users\Nicol\Documents\Code\C++\Ray\Src\Camera.cpp;C:\Users\Nicol\Documents\Code\C++\Ray\Ray\x64\Release\Camera.obj
+C:\Users\Nicol\Documents\Code\C++\Ray\Src\main.cpp;C:\Users\Nicol\Documents\Code\C++\Ray\Ray\x64\Release\main.obj
+C:\Users\Nicol\Documents\Code\C++\Ray\Src\Ray.cpp;C:\Users\Nicol\Documents\Code\C++\Ray\Ray\x64\Release\Ray.obj
+C:\Users\Nicol\Documents\Code\C++\Ray\Src\Scene.cpp;C:\Users\Nicol\Documents\Code\C++\Ray\Ray\x64\Release\Scene.obj
+C:\Users\Nicol\Documents\Code\C++\Ray\Src\Sphere.cpp;C:\Users\Nicol\Documents\Code\C++\Ray\Ray\x64\Release\Sphere.obj
+C:\Users\Nicol\Documents\Code\C++\Ray\Src\Vec3.cpp;C:\Users\Nicol\Documents\Code\C++\Ray\Ray\x64\Release\Vec3.obj
+C:\Users\Nicol\Documents\Code\C++\Ray\Src\ViewPlane.cpp;C:\Users\Nicol\Documents\Code\C++\Ray\Ray\x64\Release\ViewPlane.obj
