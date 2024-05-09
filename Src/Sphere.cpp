@@ -1,6 +1,6 @@
 #include "Sphere.h"
 
-Sphere::Sphere(const Vec3& centre, double radius, const Colour& colour, Material* material)
+Sphere::Sphere(const Vec3& centre, double radius, const Colour& colour, std::shared_ptr<Material> material)
 	: centre(centre), radius(radius), colour(colour), material(material)
 {}
 

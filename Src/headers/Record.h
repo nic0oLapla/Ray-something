@@ -6,5 +6,5 @@ struct Record {
 	Vec3 hit_point;
 	Vec3 normal;
 	Colour colour;
-	Material* material;
+	std::shared_ptr<Material> material;
 };

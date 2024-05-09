@@ -102,15 +102,15 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC;GLEW_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutiondir)Libraries\glfw-3.4\include;$(solutiondir)Libraries\glew-2.2.0\include;$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(solutiondir)Libraries\SFML-2.6.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(solutiondir)Libraries\glfw-3.4\lib;$(solutiondir)Libraries\glew-2.2.0\lib;$(solutiondir)Libraries\SFML-2.6.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;glwf3.lib;glew32s.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -119,32 +119,32 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC;GLEW_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutiondir)Libraries\glfw-3.4\include;$(solutiondir)Libraries\glew-2.2.0\include;$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(solutiondir)Libraries\SFML-2.6.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(solutiondir)Libraries\glfw-3.4\lib;$(solutiondir)Libraries\glew-2.2.0\lib;$(solutiondir)Libraries\SFML-2.6.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;glwf3.lib;glew32s.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC;GLEW_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutiondir)Libraries\glfw-3.4\include;$(solutiondir)Libraries\glew-2.2.0\include;$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(solutiondir)Libraries\SFML-2.6.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(solutiondir)Libraries\glfw-3.4\lib;$(solutiondir)Libraries\glew-2.2.0\lib\Release\x64;$(solutiondir)Libraries\SFML-2.6.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;glfw3.lib;glew32s.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -153,17 +153,17 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC;GLEW_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutiondir)Libraries\glfw-3.4\include;$(solutiondir)Libraries\glew-2.2.0\include;$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(solutiondir)Libraries\SFML-2.6.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(solutiondir)Libraries\glfw-3.4\lib;$(solutiondir)Libraries\glew-2.2.0\lib\Release\x64;$(solutiondir)Libraries\SFML-2.6.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;glfw3.lib;glew32s.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
