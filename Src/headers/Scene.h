@@ -2,7 +2,7 @@
 #include "Entity.h"
 
 struct Scene {
-	std::vector<std::shared_ptr<Entity>> titties;
+	std::vector<std::shared_ptr<Entity>> entities;
 
 	Scene();
 

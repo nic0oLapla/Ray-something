@@ -18,7 +18,6 @@ Ray Diffuse::scatter(const Ray& incident, const Vec3& point, const Vec3& normal)
 	return reflected;
 }
 Ray Lambertian::scatter(const Ray& incident, const Vec3& point, const Vec3& normal) const {
-	double theta = 360 * (rand() / (double)RAND_MAX);
 	Vec3 sphere_centre = point + normal;
 	Vec3 sphere_point = sphere_centre + normalise(Vec3(rand(), rand(), rand()));
 	Vec3 direction = normalise(sphere_point - point);

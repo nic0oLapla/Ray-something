@@ -4,7 +4,7 @@
 Scene::Scene() {}
 
 void Scene::addEntity(std::shared_ptr<Entity> entity) {
-	titties.push_back(entity);
+	entities.push_back(entity);
 }
 
 Colour cast(const Ray& ray, const Scene& world) {
@@ -13,17 +13,17 @@ Colour cast(const Ray& ray, const Scene& world) {
 
 	bool hit_any = false;
 
-	for (std::shared_ptr<Entity> entity : world.titties) {
+	for (std::shared_ptr<Entity> entity : world.entities) {
 		if (entity->test(ray, rec))
 			hit_any = true;
 	}
 
 	if (hit_any) {
-		if (ray.depth > 2)
-			return 0.1 * rec.colour;
+		//if (ray.depth > 2)
+			//return 0.1 * rec.colour;
 
 		Ray reflected = rec.material->scatter(ray, rec.hit_point, rec.normal);
-		return rec.colour * cast(reflected, world) * std::max(0.0, dot(rec.normal, -ray.dir));
+		return rec.colour * cast(reflected, world) * std::max(0.0, dot(rec.normal, -ray.dir)) * 0.9;
 
 
 	}

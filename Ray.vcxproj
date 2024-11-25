@@ -26,13 +26,10 @@
     <ClCompile Include="Src\Record.cpp" />
     <ClCompile Include="Src\Scene.cpp" />
     <ClCompile Include="Src\Sphere.cpp" />
+    <ClCompile Include="Src\Utils.cpp" />
     <ClCompile Include="Src\Vec2.cpp" />
     <ClCompile Include="Src\Vec3.cpp" />
     <ClCompile Include="Src\ViewPlane.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Src\FragmentShader.frag" />
-    <None Include="Src\VertexShader.vert" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\headers\Camera.h" />
@@ -42,9 +39,14 @@
     <ClInclude Include="Src\headers\Record.h" />
     <ClInclude Include="Src\headers\Scene.h" />
     <ClInclude Include="Src\headers\Sphere.h" />
+    <ClInclude Include="Src\headers\Utils.h" />
     <ClInclude Include="Src\headers\Vec2.h" />
     <ClInclude Include="Src\headers\Vec3.h" />
     <ClInclude Include="Src\headers\ViewPlane.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="x64\Debug\FragmentShader.frag" />
+    <None Include="x64\Debug\VertexShader.vert" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -105,6 +107,8 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC;GLEW_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(solutiondir)Libraries\glfw-3.4\include;$(solutiondir)Libraries\glew-2.2.0\include;$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -122,6 +126,8 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC;GLEW_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(solutiondir)Libraries\glfw-3.4\include;$(solutiondir)Libraries\glew-2.2.0\include;$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,6 +145,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC;GLEW_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(solutiondir)Libraries\glfw-3.4\include;$(solutiondir)Libraries\glew-2.2.0\include;$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -156,6 +164,8 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC;GLEW_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(solutiondir)Libraries\glfw-3.4\include;$(solutiondir)Libraries\glew-2.2.0\include;$(solutiondir)Libraries\SFML-2.6.1\include;$(solutiondir)Src\headers</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -163,7 +173,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(solutiondir)Libraries\glfw-3.4\lib;$(solutiondir)Libraries\glew-2.2.0\lib\Release\x64;$(solutiondir)Libraries\SFML-2.6.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;glfw3.lib;glew32s.lib</AdditionalDependencies>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
