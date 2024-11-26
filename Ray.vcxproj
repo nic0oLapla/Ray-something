@@ -26,7 +26,7 @@
     <ClCompile Include="Src\Record.cpp" />
     <ClCompile Include="Src\Scene.cpp" />
     <ClCompile Include="Src\Sphere.cpp" />
-    <ClCompile Include="Src\Utils.cpp" />
+    <ClCompile Include="Src\ShaderUtils.cpp" />
     <ClCompile Include="Src\Vec2.cpp" />
     <ClCompile Include="Src\Vec3.cpp" />
     <ClCompile Include="Src\ViewPlane.cpp" />
@@ -39,7 +39,7 @@
     <ClInclude Include="Src\headers\Record.h" />
     <ClInclude Include="Src\headers\Scene.h" />
     <ClInclude Include="Src\headers\Sphere.h" />
-    <ClInclude Include="Src\headers\Utils.h" />
+    <ClInclude Include="Src\headers\ShaderUtils.h" />
     <ClInclude Include="Src\headers\Vec2.h" />
     <ClInclude Include="Src\headers\Vec3.h" />
     <ClInclude Include="Src\headers\ViewPlane.h" />

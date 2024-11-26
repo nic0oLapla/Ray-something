@@ -23,7 +23,7 @@ Colour cast(const Ray& ray, const Scene& world) {
 			//return 0.1 * rec.colour;
 
 		Ray reflected = rec.material->scatter(ray, rec.hit_point, rec.normal);
-		return rec.colour * cast(reflected, world) * std::max(0.0, dot(rec.normal, -ray.dir)) * 0.9;
+		return rec.colour * cast(reflected, world) * (8 * std::max(0.0, dot(rec.normal, -ray.dir)) / 10 + 0.2) * 0.9;
 
 
 	}

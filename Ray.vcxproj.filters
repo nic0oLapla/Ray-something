@@ -45,7 +45,7 @@
     <ClCompile Include="Src\Materials.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\Utils.cpp">
+    <ClCompile Include="Src\ShaderUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -80,7 +80,7 @@
     <ClInclude Include="Src\headers\Materials.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Src\headers\Utils.h">
+    <ClInclude Include="Src\headers\ShaderUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
